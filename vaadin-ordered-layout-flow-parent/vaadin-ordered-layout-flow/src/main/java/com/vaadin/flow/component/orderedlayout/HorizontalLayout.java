@@ -36,10 +36,11 @@ public class HorizontalLayout extends Component implements ThemableLayout,
         FlexComponent, ClickNotifier<HorizontalLayout> {
 
     /**
-     * Constructs an empty layout with spacing on by default.
+     * Constructs an empty layout with spacing on and baseline alignment by default.
      */
     public HorizontalLayout() {
         setSpacing(true);
+        setDefaultVerticalComponentAlignment(FlexComponent.Alignment.BASELINE);
     }
 
     /**
